@@ -47,3 +47,37 @@ const myfun = function(){
 myfun();
 
 console.table([typeof arr, typeof myobj, typeof myfun]);
+
+
+// ____________________________________-------------------_________________________________
+
+
+
+//Stack and Heap
+// Stack is used for Primitive datatype : we get copy of variable
+//Heap is used for Non-Primitive datatype:  here variable is passed by reference.
+
+let myyoutube = "newyoutube"
+
+let varia = myyoutube;
+varia = "old-youtube"
+
+console.log(myyoutube);
+console.log(varia);
+
+
+let userOne = {
+    email:"user@gmail.com",
+    add:"hi123"
+}
+let userTwo = userOne;
+
+// userOne.email = "userchange@gmail.com";
+
+console.log(userOne);
+console.log(userTwo);
+
+userOne.email = "userchange@gmail.com";
+
+console.log(userOne);
+console.log(userTwo);
